@@ -1,12 +1,12 @@
 /* ======================== start general section ======================== */
 @font-face {
   font-family: daysOne;
-  src: url(../webfonts/DaysOne-Regular.ttf) format('truetype');
+  src: url(../webfonts/DaysOne-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: chakra;
-  src: url(../webfonts/ChakraPetch-Regular.ttf) format('truetype');
+  src: url(../webfonts/ChakraPetch-Regular.ttf) format("truetype");
 }
 
 :root {
@@ -27,15 +27,96 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.63;
-  background-color: #0B0E13;
+  background-color: #0b0e13;
 }
 
 body::selection {
   background-color: var(--primary-color);
   color: var(--surface);
 }
+
+.gamey-button {
+  background-color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  transition: all 0.15s ease-in;
+  position: relative;
+  overflow: hidden;
+}
+
+.gamey-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 20%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0.08) 80%,
+    transparent 100%
+  );
+  transform: skewX(-15deg);
+  transition: left 1s ease;
+}
+
+.gamey-button:hover::before {
+  left: 125%;
+}
+
+.gamey-button:hover {
+  background-color: color-mix(in oklab, var(--primary-color) 80%, transparent);
+}
+
 /* ======================== end general section ======================== */
 
 /* ======================== start nav bar section ======================== */
+nav {
+  background-color: #0b0e13;
+}
+
+nav .navbar-brand {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.navbar-brand:focus,
+.navbar-brand:active,
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-link {
+  color: var(--main-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.navbar-nav .nav-link.active:focus,
+.navbar-nav .nav-link.show:focus,
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link.show:hover,
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary-color);
+}
 
 /* ======================== end nav bar section ======================== */
+
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)),
+    url(../images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
