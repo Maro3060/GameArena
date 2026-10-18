@@ -1,10 +1,37 @@
 @font-face {
-    font-family: DaysOne;
-    src: url(../webfonts/DaysOne-Regular.ttf) format('truetype');
+  font-family: DaysOne;
+  src: url(../webfonts/DaysOne-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: chakraPetch;
-    src: url(../webfonts/ChakraPetch-Regular.ttf) format('truetype');
+  font-family: chakraPetch;
+  src: url(../webfonts/ChakraPetch-Regular.ttf) format("truetype");
 }
 
+:root {
+  --primary-color: #cbfe1c;
+  --primary-color-rgp: rgb(203, 254, 28);
+  --accent-color: #d5fe49;
+  --accent-color-rgp: rgb(213, 254, 73);
+  --surface-color: #000000;
+  --surface-color-rgp: rgb(0, 0, 0);
+  --text-color: #f1f1f1;
+  --text-color-rgp: rgb(241, 241, 241);
+  --muted-color: #8c8c8c;
+  --muted-color-rgp: rgb(140, 140, 140);
+  --button-bg-color: #cbfe1c;
+  --button-bg-color-rgp: rgb(203, 254, 28);
+  --button-radius: 0.5rem;
+  --button-fw: 700;
+  --card-radius: 1rem;
+  --input-radius: 0.5rem;
+  --input-focus: #cbfe1c;
+  --input-focus-rgp: rgb(203, 254, 28);
+}
+
+body {
+  font-family: chakraPetch, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.63;
+}
