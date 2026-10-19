@@ -31,7 +31,7 @@
   --main-bg-color-rgp: rgb(11, 14, 19);
   --nav-bar-border-color: #181921;
   --nav-bar-border-color-rgp: rgb(24, 25, 33);
-  --navbar-toggler-icon: url('../images/bars-solid\ \(2\).png');
+  --navbar-toggler-icon: url("../images/bars-solid\ \(2\).png");
 }
 
 body {
@@ -47,6 +47,7 @@ body::selection {
   color: var(--surface-color);
 }
 
+/* ===================== nav bar start =====================  */
 .bg-nav-body {
   background-color: var(--main-bg-color);
   border-bottom: var(--nav-bar-border-color) solid 1px;
@@ -95,9 +96,14 @@ div.nav-icons i:hover {
   color: var(--primary-color);
 }
 
-.sign-in-button {
+button.sign-in-button {
   background-color: var(--primary-color);
   color: var(--surface-color);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
 }
 
 nav hr {
@@ -105,5 +111,44 @@ nav hr {
 }
 
 .navbar-toggler-icon {
-    background-image: var(--navbar-toggler-icon);
+  background-image: var(--navbar-toggler-icon);
 }
+
+.notification:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.message:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+button.sign-in-button.btn:hover {
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+}
+
+button.sign-in-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 20%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0.08) 80%,
+    transparent 100%
+  );
+  transform: skewX(-15deg);
+  transition: left 1s ease;
+}
+
+button.sign-in-button:hover::before {
+  left: 125%;
+}
+/* ===================== nav bar end =====================  */
