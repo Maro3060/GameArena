@@ -14,12 +14,12 @@
   </head>
   <body>
     <!-- =========================== nav bar start =========================== -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-nav-body">
       <div class="container my-2">
-        <a class="navbar-brand" href="#">
+        <div class="navbar-brand d-flex align-items-center column-gap-2">
           <i class="fa-solid fa-gamepad"></i>
           GameArena
-        </a>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -34,16 +34,41 @@
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#our-games">OUR GAMES</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#what-we-do">What We Do</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#our-team">Our Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact Us</a>
+            </li>
+            <hr class="d-none d-sm-block d-md-block d-lg-block" />
           </ul>
-          <span class="navbar-text"> Navbar text with an inline element </span>
+          <div class="nav-icons d-flex align-items-center column-gap-3">
+            <div
+              class="nav-functions w-100 d-flex align-items-center align-items-md-start align-items-lg-center column-gap-3 flex-row flex-sm-column flex-md-column flex-lg-row row-gap-3"
+            >
+              <div class="notification d-flex column-gap-2">
+                <i class="fa-regular fa-bell"></i>
+                <span class="d-none d-md-block d-lg-none">Notification</span>
+              </div>
+              <div class="message d-flex column-gap-2">
+                <i class="fa-regular fa-message"></i>
+                <span class="d-none d-md-block d-lg-none">Message</span>
+              </div>
+              <div class="sign-in-button px-3 py-2 rounded-2 w-100 text-center">
+                Sign In
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>

@@ -27,6 +27,11 @@
   --input-radius: 0.5rem;
   --input-focus: #cbfe1c;
   --input-focus-rgp: rgb(203, 254, 28);
+  --main-bg-color: #0b0e13;
+  --main-bg-color-rgp: rgb(11, 14, 19);
+  --nav-bar-border-color: #181921;
+  --nav-bar-border-color-rgp: rgb(24, 25, 33);
+  --navbar-toggler-icon: url('../images/bars-solid\ \(2\).png');
 }
 
 body {
@@ -34,4 +39,71 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.63;
+  background-color: var(--main-bg-color);
+}
+
+body::selection {
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+}
+
+.bg-nav-body {
+  background-color: var(--main-bg-color);
+  border-bottom: var(--nav-bar-border-color) solid 1px;
+}
+
+.nav-link {
+  color: var(--text-color);
+  line-height: 1.5rem;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--text-color);
+}
+
+.nav-link.active:focus,
+.nav-link.active:hover {
+  color: var(--primary-color);
+}
+
+div.nav-icons {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+div.nav-icons i:hover {
+  color: var(--primary-color);
+}
+
+.sign-in-button {
+  background-color: var(--primary-color);
+  color: var(--surface-color);
+}
+
+nav hr {
+  border-top: #2f3743 solid 1px;
+}
+
+.navbar-toggler-icon {
+    background-image: var(--navbar-toggler-icon);
 }
