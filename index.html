@@ -131,7 +131,7 @@
         </div>
         <h2 class="header-title">Our Latest Games</h2>
       </div>
-      <div id="carouselExample" class="carousel slide py-5">
+      <div id="carouselExample" class="carousel slide pb-5">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container">
@@ -399,7 +399,9 @@
                   </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-6 col-xl-4">
-                  <div class="game d-sm-none d-md-none d-lg-none d-xl-block position-relative rounded-4">
+                  <div
+                    class="game d-sm-none d-md-none d-lg-none d-xl-block position-relative rounded-4"
+                  >
                     <div
                       class="tags d-flex column-gap-4 align-items-center ps-3 position-absolute z-2"
                     >
@@ -432,24 +434,35 @@
             </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="prev"
+        <div
+          class="carousel-nav d-flex justify-content-center align-items-center gap-3 mt-4"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
+          <button
+            class="carousel-control-prev position-static"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span aria-hidden="true"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+
+          
+          <button
+          class="carousel-control-next position-static"
           type="button"
-          data-bs-target="#carouselExample"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span aria-hidden="true"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button class="btn View-all px-5 py-3">VIEW ALL GAMES</button>
+        </div>
       </div>
     </section>
     <!-- =========================== our latest game section end =========================== -->
