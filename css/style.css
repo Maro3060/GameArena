@@ -250,3 +250,128 @@ button.watch-button.btn:hover {
   color: var(--text-color);
 }
 /* ===================== hero section end =====================  */
+
+/* ===================== our latest game section start =====================  */
+.header-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.header-badge::before,
+.header-badge::after {
+  content: "";
+  flex: 1;
+  max-width: 70px;
+  height: 2px;
+}
+
+.header-badge::before {
+  background: linear-gradient(to right, transparent, var(--accent-color));
+}
+
+.header-badge::after {
+  background: linear-gradient(to left, transparent, var(--accent-color));
+}
+
+.badge-pill {
+  color: var(--accent-color);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header-title {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 900;
+  color: var(--text-color);
+  font-family: DaysOne;
+}
+
+
+.game-img {
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: all 0.15s ease-in;
+  cursor: pointer;
+}
+
+.game-img:hover {
+  border: 2px solid var(--accent-color);
+}
+
+.game-img img {
+  aspect-ratio: 4 / 3;
+  background: transparent;
+  transition: all 0.15s ease-in;
+}
+
+.game:hover img {
+
+  transform: scale(1.1);
+}
+
+.pill {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: var(--accent-color);
+}
+
+.pill span {
+  color: var(--text-color);
+}
+
+.game .tags {
+  transform: translateY(-100%);
+  transition: all .15s ease-in;
+}
+
+.game:hover .tags{
+  transform: translateY(50%);
+}
+
+.game .game-title {
+  color: var(--main-bg-color);
+  transform: translateY(100%);
+  transition: all .15s ease-in;
+}
+
+.game .game-title h3 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.game:hover .game-title {
+  transform: translateY(-140%);
+}
+
+.game {
+  overflow: hidden;
+}
+
+.game::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top,
+    rgba(200, 240, 50, 1) 0%,
+    rgba(160, 220, 40, 0.85) 20%,
+    rgba(120, 190, 40, 0.4) 45%,
+    rgba(120, 190, 40, 0) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.game:hover::after {
+  opacity: 1;
+}
+/* ===================== our latest game section end =====================  */
