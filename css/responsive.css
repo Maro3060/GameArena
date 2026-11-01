@@ -1,0 +1,9 @@
+@media (max-width: 992px) {
+  header {
+    height: 200vh;
+  }
+
+  .active-players {
+    left: 0;
+  }
+}

@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- =========================== main css files =========================== -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <!-- =========================== nav bar start =========================== -->
@@ -54,15 +55,15 @@
           </ul>
           <div class="nav-icons d-flex align-items-center column-gap-3">
             <div
-              class="nav-functions w-100 d-flex align-items-center align-items-md-start align-items-lg-center column-gap-3 flex-row flex-sm-column flex-md-column flex-lg-row row-gap-3"
+              class="nav-functions w-100 d-flex align-items-sm-start align-items-md-center align-items-lg-center column-gap-3 flex-row flex-sm-column flex-md-column flex-lg-row row-gap-3"
             >
               <div class="notification d-flex column-gap-2">
                 <i class="fa-regular fa-bell"></i>
-                <span class="d-none d-md-block d-lg-none">Notification</span>
+                <span class="d-block d-md-block d-lg-none">Notification</span>
               </div>
               <div class="message d-flex column-gap-2">
                 <i class="fa-regular fa-message"></i>
-                <span class="d-none d-md-block d-lg-none">Message</span>
+                <span class="d-block d-md-block d-lg-none">Message</span>
               </div>
               <button
                 class="sign-in-button btn px-4 py-2 rounded-2 w-100 shine-button"
@@ -77,11 +78,9 @@
     <!-- =========================== nav bar end =========================== -->
     <!-- =========================== hero section start =========================== -->
     <header id="home">
-      <div
-        class="container h-100 bg-info d-flex justify-content-center flex-column"
-      >
-        <div class="row">
-          <div class="col-md-6">
+      <div class="container h-100 d-flex justify-content-center flex-column">
+        <div class="row d-flex align-items-center">
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 hero-content text-center text-md-center text-lg-center text-xl-start text-xxl-start">
             <h1>
               THE ULTIMATE<br />
               <span>GAMING</span><br />
@@ -91,12 +90,27 @@
               Join millions of gamers worldwide in the most competitive
               eSports<br />
               tournaments. Experience next-level gaming with cutting-edge
-              technology and <br />
-              endless possibilities.
+              technology and endless possibilities.
             </p>
-            <div class="button-wrapper">
-              <button class="btn start-button shine-button">Start Gaming Now</button>
-              <button class="btn watch-button shine-button">Watch Tournaments</button>
+            <div class="button-wrapper d-flex flex-column flex-lg-column flex-xl-row row-gap-3 column-gap-3">
+              <button class="btn start-button shine-button py-3 px-4">
+                Start Gaming Now
+              </button>
+              <button class="btn watch-button shine-button py-3 px-4">
+                Watch Tournaments
+              </button>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6 hero-img position-relative my-sm-5">
+            <div class="image-holder rounded-4"></div>
+            <div
+              class="active-players rounded-3 d-flex align-items-center justify-content-center column-gap-3 fs-5 position-absolute p-4"
+            >
+              <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+              <div class="active-players-count d-flex flex-column">
+                <p class="m-0">Active Players</p>
+                <span class="m-0">2.5M+</span>
+              </div>
             </div>
           </div>
         </div>

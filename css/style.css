@@ -32,6 +32,8 @@
   --nav-bar-border-color: #181921;
   --nav-bar-border-color-rgp: rgb(24, 25, 33);
   --navbar-toggler-icon: url("../images/bars-solid\ \(2\).png");
+  --border-color: #212733;
+  --border-color-rgp: rgb(33, 39, 51);
 }
 
 body {
@@ -77,7 +79,7 @@ body::selection {
 /* ===================== nav bar start =====================  */
 .bg-nav-body {
   background-color: var(--main-bg-color);
-  border-bottom: var(--nav-bar-border-color) solid 1px;
+  border-bottom: var(--nav-bar-border-color) solid 0.0625rem;
 }
 
 .nav-link {
@@ -114,7 +116,7 @@ body::selection {
 
 div.nav-icons {
   color: var(--text-color);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.5rem;
 }
@@ -128,11 +130,11 @@ button.sign-in-button {
   color: var(--surface-color);
   font-weight: 700;
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 nav hr {
-  border-top: #2f3743 solid 1px;
+  border-top: #2f3743 solid 0.0625rem;
 }
 
 .navbar-toggler-icon {
@@ -183,11 +185,68 @@ header p {
   color: var(--text-color);
 }
 
+button.start-button,
+button.watch-button {
+  font-weight: 700;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
 button.start-button {
+  background-color: var(--button-bg-color);
+  transition: all 0.15s ease-in;
+}
+
+button.start-button.btn:hover {
+  color: var(--surface-color);
   background-color: var(--button-bg-color);
 }
 
 button.watch-button {
-  border: solid 2px var(--primary-color);
+  border: solid 0.125rem var(--button-bg-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  transition: all 0.15s ease-in;
+}
+
+button.watch-button.btn:hover {
+  color: var(--surface-color);
+  background-color: var(--button-bg-color);
+}
+
+.image-holder {
+  width: 100%;
+  aspect-ratio: 15 / 10;
+  background-color: #cbfe1c;
+  background: url(../images/hero-img.png);
+  background-position: center;
+  background-size: cover;
+  border: solid 0.3125rem var(--accent-color);
+}
+
+.active-players {
+  background-color: var(--main-bg-color);
+  width: fit-content;
+  border: solid 0.0625rem var(--border-color);
+  top: 85%;
+  left: -5%;
+}
+
+.active-players .icon {
+  color: var(--accent-color);
+}
+
+.active-players p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
+  color: var(--muted-color);
+}
+
+.active-players span {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  color: var(--text-color);
 }
 /* ===================== hero section end =====================  */
