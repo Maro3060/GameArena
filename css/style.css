@@ -291,7 +291,6 @@ button.watch-button.btn:hover {
   font-family: DaysOne;
 }
 
-
 .game-img {
   border: 2px solid transparent;
   overflow: hidden;
@@ -310,7 +309,6 @@ button.watch-button.btn:hover {
 }
 
 .game:hover img {
-
   transform: scale(1.1);
 }
 
@@ -329,17 +327,17 @@ button.watch-button.btn:hover {
 
 .game .tags {
   transform: translateY(-100%);
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
-.game:hover .tags{
+.game:hover .tags {
   transform: translateY(50%);
 }
 
 .game .game-title {
   color: var(--main-bg-color);
   transform: translateY(100%);
-  transition: all .15s ease-in;
+  transition: all 0.15s ease-in;
 }
 
 .game .game-title h3 {
@@ -360,7 +358,8 @@ button.watch-button.btn:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
+  background: linear-gradient(
+    to top,
     rgba(200, 240, 50, 1) 0%,
     rgba(160, 220, 40, 0.85) 20%,
     rgba(120, 190, 40, 0.4) 45%,
@@ -428,7 +427,7 @@ button.watch-button.btn:hover {
 }
 
 .boxes-container .box {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   border: solid 2px var(--border-color);
   aspect-ratio: 1/1;
 }
@@ -465,7 +464,7 @@ button.watch-button.btn:hover {
 .triangle-top-left {
   top: 0;
   left: 0;
-  clip-path: polygon(0 0, 100% 0, 0 100%); 
+  clip-path: polygon(0 0, 100% 0, 0 100%);
   transform: translate(-50%, -50%);
   transition: all 0.15s ease-in;
 }
@@ -478,7 +477,7 @@ button.watch-button.btn:hover {
   transition: all 0.15s ease-in;
 }
 
-.box:hover .triangle-top-left{
+.box:hover .triangle-top-left {
   transform: translate(50%, 50%);
 }
 
@@ -486,8 +485,9 @@ button.watch-button.btn:hover {
   transform: translate(-50%, -50%);
 }
 
-.box-image, .box-image2 {
-  background-color: #1A1A1A;
+.box-image,
+.box-image2 {
+  background-color: #1a1a1a;
   border: solid 2px var(--border-color);
   aspect-ratio: 1/1;
   background-position: center;
@@ -495,9 +495,82 @@ button.watch-button.btn:hover {
 }
 
 .box-image {
-  background-image: url('../images/what-we-do-1.png');
+  background-image: url("../images/what-we-do-1.png");
 }
 
 .box-image2 {
-  background-image: url('../images/what-we-do-2.png');
+  background-image: url("../images/what-we-do-2.png");
+}
+
+.boxes-container::after {
+  content: "";
+  width: 80%;
+  max-width: 600px;
+  height: 2px;
+  box-shadow:
+    0 0 10px var(--accent-color),
+    0 0 20px #cbfe1c4d;
+  position: absolute;
+  bottom: -7%;
+  left: 50%;
+  transform: translate(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-color) 20%,
+    var(--accent-color) 80%,
+    transparent
+  );
+}
+
+.logo-box {
+  width: 96px;
+  height: 96px;
+}
+
+.logos-slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.logos-container {
+  animation: scroll-right 30s linear infinite;
+  width: max-content;
+}
+
+.sliders .logos-slider:nth-child(2) .logos-container {
+  animation: scroll-left 30s linear infinite;
+  width: max-content;
+}
+
+.sliders::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, #86a100 0%, #151d08 40%, #0d0f12 70%);
+  border-radius: 50%;
+  z-index: -1;
 }
