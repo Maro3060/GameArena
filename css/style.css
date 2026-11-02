@@ -415,6 +415,7 @@ button.watch-button.btn:hover {
 }
 /* ===================== our latest game section end =====================  */
 
+/* ===================== WHAT WE DO section start =====================  */
 .section-header p {
   font-size: 48px;
   line-height: 48px;
@@ -574,3 +575,13 @@ button.watch-button.btn:hover {
   border-radius: 50%;
   z-index: -1;
 }
+/* ===================== WHAT WE DO section end =====================  */
+
+/* ===================== OUR TEAM section start =====================  */
+#our-team .section-header p {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #99a1af;
+}
+/* ===================== OUR TEAM section end =====================  */
