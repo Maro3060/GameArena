@@ -415,3 +415,89 @@ button.watch-button.btn:hover {
   left: calc(40% - 60px);
 }
 /* ===================== our latest game section end =====================  */
+
+.section-header p {
+  font-size: 48px;
+  line-height: 48px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.section-header p span {
+  color: var(--accent-color);
+}
+
+.boxes-container .box {
+  background-color: #1A1A1A;
+  border: solid 2px var(--border-color);
+  aspect-ratio: 1/1;
+}
+
+.boxes-container .box:hover {
+  border: solid 2px var(--accent-color);
+}
+
+.box-icon {
+  background-color: #1e2939;
+  color: var(--accent-color);
+  transition: all 0.15s ease-in;
+}
+
+.box:hover .box-icon {
+  color: var(--main-bg-color);
+  background-color: var(--accent-color);
+}
+
+.box h3 {
+  color: var(--text-color);
+  font-family: DaysOne;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+}
+
+.corner-triangle {
+  width: 30px;
+  height: 30px;
+  background-color: var(--accent-color);
+}
+
+.triangle-top-left {
+  top: 0;
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%); 
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease-in;
+}
+
+.triangle-bottom-right {
+  bottom: 0;
+  right: 0;
+  transform: translate(50%, 50%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  transition: all 0.15s ease-in;
+}
+
+.box:hover .triangle-top-left{
+  transform: translate(50%, 50%);
+}
+
+.box:hover .triangle-bottom-right {
+  transform: translate(-50%, -50%);
+}
+
+.box-image, .box-image2 {
+  background-color: #1A1A1A;
+  border: solid 2px var(--border-color);
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+}
+
+.box-image {
+  background-image: url('../images/what-we-do-1.png');
+}
+
+.box-image2 {
+  background-image: url('../images/what-we-do-2.png');
+}
