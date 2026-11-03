@@ -34,6 +34,7 @@
   --navbar-toggler-icon: url("../images/bars-solid\ \(2\).png");
   --border-color: #212733;
   --border-color-rgp: rgb(33, 39, 51);
+  --list-icon: url("../images/angle-down-solid.png");
 }
 
 body {
@@ -643,3 +644,166 @@ button.watch-button.btn:hover {
   transform: translateY(-100%);
 }
 /* ===================== OUR TEAM section end =====================  */
+/* ===================== contact us section start =====================  */
+section#contact-us {
+  background-color: #0b0f19;
+}
+
+#contact-us .section-header p {
+  font-size: 20px;
+  font-weight: 400;
+  color: #99a1af;
+  line-height: 28px;
+}
+
+.contact-card,
+.form-box {
+  background-color: #1e2939;
+}
+
+.card-icon {
+  background-color: var(--accent-color);
+  width: 70px;
+  height: 70px;
+}
+
+.card-data h3 {
+  font-family: DaysOne;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.card-data p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #99a1af;
+}
+
+.join-card {
+  background: linear-gradient(135deg, #a3ff00 0%, #2bd966 100%);
+}
+
+.join-card h3 {
+  font-family: DaysOne;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.join-card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.link {
+  background-color: var(--main-bg-color);
+  width: 50px;
+  height: 50px;
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.link:hover {
+  background-color: rgba(11, 14, 19, 0.7);
+}
+
+.form-box h3 {
+  font-family: DaysOne;
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #d1d5dc;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 13px 0.75rem;
+  appearance: none;
+  background-color: #364153;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  color: #99a1af;
+}
+
+.form-control:focus {
+  color: var(--bs-body-color);
+  background-color: #364153;
+  border-color: var(--input-focus);
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control::placeholder {
+  color: #99a1af;
+}
+
+.form-select {
+  padding: 13px 0.75rem;
+  color: #99a1af;
+  background-color: #364153;
+  background-image: var(--list-icon), var(--bs-form-select-bg-icon, none);
+  border: var(--bs-border-width) solid var(--border-color);
+}
+
+.form-select:focus {
+  border-color: var(--input-focus);
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input {
+  background-color: #f1f1f1;
+}
+
+.form-check-input:focus {
+  border: var(--input-focus) solid 2px;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+}
+
+.send {
+  background-color: var(--button-bg-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #0b0e13;
+}
+
+.send:hover {
+  background-color: var(--button-bg-color);
+}
+
+.customer-services {
+  border-top: solid 2px #2A3445;
+}
+.support span:first-child {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #cbfe1c;
+}
+
+.support span:nth-child(2) {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #99a1af;
+}
+/* ===================== contact us section end =====================  */
