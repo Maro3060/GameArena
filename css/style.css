@@ -128,7 +128,8 @@ body::selection {
   color: var(--primary-color);
 }
 
-div.nav-icons {
+.notification,
+.message {
   color: var(--text-color);
   font-size: 1.125rem;
   font-weight: 400;
@@ -178,7 +179,9 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-position: 50%;
-  height: 100vh;
+  min-height: 100vh;
+  padding-top: 9.375rem;
+  padding-bottom: 3rem;
 }
 
 h1 {
@@ -243,7 +246,7 @@ button.watch-button.btn:hover {
   width: fit-content;
   border: solid 0.0625rem var(--border-color);
   top: 85%;
-  left: -5%;
+  left: 1%;
 }
 
 .active-players .icon {
@@ -842,7 +845,7 @@ ul li a {
 }
 
 ul li a:hover {
-  color: var(--accent-color)
+  color: var(--accent-color);
 }
 
 p.rights {
