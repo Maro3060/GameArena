@@ -37,6 +37,11 @@
   --list-icon: url("../images/angle-down-solid.png");
 }
 
+section,
+header {
+  scroll-margin-top: 90px;
+}
+
 body {
   font-family: chakraPetch, sans-serif;
   font-size: 1rem;
@@ -115,7 +120,7 @@ body::selection {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: var(--text-color);
+  color: var(--primary-color);
 }
 
 .nav-link.active:focus,
